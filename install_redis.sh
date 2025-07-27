@@ -47,7 +47,7 @@ TEMP_DIR=$(mktemp -d)
 cd "$TEMP_DIR"
 
 # Repository klonen
-git clone git@github.com:germebl/ispconfig-redis.git
+git clone https://github.com/germebl/ispconfig-redis.git
 cd ispconfig-redis
 
 if [ ! -d "." ]; then
