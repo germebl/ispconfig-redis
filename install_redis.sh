@@ -47,8 +47,8 @@ TEMP_DIR=$(mktemp -d)
 cd "$TEMP_DIR"
 
 # Repository klonen
-git clone git@github.com:germebl/ispconfig_redis.git
-cd ispconfig_redis
+git clone git@github.com:germebl/ispconfig-redis.git
+cd ispconfig-redis
 
 if [ ! -d "." ]; then
     echo "Fehler: Plugin-Repository konnte nicht geklont werden"
@@ -320,7 +320,7 @@ echo ""
 echo "Das Plugin ist jetzt verfügbar unter:"
 echo "ISPConfig Panel > Sites > Redis Instances"
 echo ""
-echo "Repository: git@github.com:germebl/ispconfig_redis.git"
+echo "Repository: git@github.com:germebl/ispconfig-redis.git"
 echo ""
 echo "Hinweise:"
 echo "- Stellen Sie sicher, dass die Firewall die Redis-Ports freigibt"
