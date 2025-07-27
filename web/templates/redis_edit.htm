@@ -1,0 +1,58 @@
+<!-- /usr/local/ispconfig/interface/web/templates/redis_edit.htm -->
+<h2><tmpl_var name="list_head_txt"></h2>
+<div class="panel panel_redis">
+
+<div class="pnl_formsarea">
+<fieldset class="inlineLabels"><legend>{tmpl_var name='redis_settings_txt'}</legend>
+
+<div class="ctrlHolder">
+    <label for="redis_name">{tmpl_var name='redis_name_txt'}</label>
+    <input name="redis_name" id="redis_name" value="{tmpl_var name='redis_name'}" size="30" maxlength="255" type="text" class="textInput" />
+</div>
+
+<div class="ctrlHolder">
+    <label for="redis_optimization_mode">{tmpl_var name='optimization_mode_txt'}</label>
+    <select name="redis_optimization_mode" id="redis_optimization_mode" class="selectInput">
+        <option value="cache"{tmpl_var name='cache_selected'}>{tmpl_var name='cache_txt'}</option>
+        <option value="fullpage"{tmpl_var name='fullpage_selected'}>{tmpl_var name='fullpage_txt'}</option>
+        <option value="session"{tmpl_var name='session_selected'}>{tmpl_var name='session_txt'}</option>
+        <option value="custom"{tmpl_var name='custom_selected'}>{tmpl_var name='custom_txt'}</option>
+    </select>
+</div>
+
+<div class="ctrlHolder">
+    <label for="redis_maxmemory">{tmpl_var name='maxmemory_txt'}</label>
+    <input name="redis_maxmemory" id="redis_maxmemory" value="{tmpl_var name='redis_maxmemory'}" size="10" type="text" class="textInput" />
+    <span class="formHint">{tmpl_var name='maxmemory_hint_txt'}</span>
+</div>
+
+<div class="ctrlHolder">
+    <label for="redis_maxmemory_policy">{tmpl_var name='eviction_policy_txt'}</label>
+    <select name="redis_maxmemory_policy" id="redis_maxmemory_policy" class="selectInput">
+        <option value="allkeys-lru"{tmpl_var name='allkeys_lru_selected'}>allkeys-lru</option>
+        <option value="volatile-lru"{tmpl_var name='volatile_lru_selected'}>volatile-lru</option>
+        <option value="allkeys-random"{tmpl_var name='allkeys_random_selected'}>allkeys-random</option>
+        <option value="volatile-random"{tmpl_var name='volatile_random_selected'}>volatile-random</option>
+        <option value="volatile-ttl"{tmpl_var name='volatile_ttl_selected'}>volatile-ttl</option>
+    </select>
+</div>
+
+<div class="ctrlHolder">
+    <label for="redis_password">{tmpl_var name='password_txt'}</label>
+    <input name="redis_password" id="redis_password" value="{tmpl_var name='redis_password'}" size="30" type="password" class="textInput" />
+</div>
+
+<div class="ctrlHolder">
+    <label for="redis_custom_config">{tmpl_var name='custom_config_txt'}</label>
+    <textarea name="redis_custom_config" id="redis_custom_config" cols="30" rows="10" class="textInput">{tmpl_var name='redis_custom_config'}</textarea>
+</div>
+
+</fieldset>
+
+<div class="buttonHolder buttons">
+    <button class="positive iconstxt icoPositive" type="button" value="{tmpl_var name='btn_save_txt'}" onClick="submitForm('pageForm','sites/redis_edit.php');"><span>{tmpl_var name='btn_save_txt'}</span></button>
+    <button class="negative iconstxt icoNegative" type="button" value="{tmpl_var name='btn_cancel_txt'}" onClick="loadContent('sites/redis_list.php');"><span>{tmpl_var name='btn_cancel_txt'}</span></button>
+</div>
+
+</div>
+</div>

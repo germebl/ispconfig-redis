@@ -1,0 +1,41 @@
+<?php
+// /usr/local/ispconfig/interface/plugins/redis/lib/lang/en.lng
+
+$wb['list_head_txt'] = 'Redis Instances';
+$wb['redis_name_txt'] = 'Instance Name';
+$wb['redis_port_txt'] = 'Port';
+$wb['redis_status_txt'] = 'Status';
+$wb['redis_memory_txt'] = 'Memory';
+$wb['redis_optimization_txt'] = 'Optimization';
+$wb['active_txt'] = 'Active';
+$wb['inactive_txt'] = 'Inactive';
+
+$wb['redis_settings_txt'] = 'Redis Settings';
+$wb['optimization_mode_txt'] = 'Optimization Mode';
+$wb['maxmemory_txt'] = 'Max Memory';
+$wb['maxmemory_hint_txt'] = 'e.g. 128mb, 1gb, 512kb';
+$wb['eviction_policy_txt'] = 'Eviction Policy';
+$wb['password_txt'] = 'Password';
+$wb['custom_config_txt'] = 'Custom Configuration';
+
+$wb['cache_txt'] = 'Cache Optimized';
+$wb['fullpage_txt'] = 'Full Page Cache';
+$wb['session_txt'] = 'Session Storage';
+$wb['custom_txt'] = 'Custom';
+
+$wb['btn_save_txt'] = 'Save';
+$wb['btn_cancel_txt'] = 'Cancel';
+$wb['btn_add_txt'] = 'Add';
+$wb['btn_edit_txt'] = 'Edit';
+$wb['btn_delete_txt'] = 'Delete';
+
+$wb['error_redis_name_empty'] = 'Redis instance name is required';
+$wb['error_redis_name_exists'] = 'A Redis instance with this name already exists';
+$wb['error_invalid_memory_format'] = 'Invalid memory format';
+$wb['error_port_in_use'] = 'Port is already in use';
+
+$wb['confirm_delete_txt'] = 'Do you really want to delete this Redis instance?';
+$wb['redis_created_txt'] = 'Redis instance created successfully';
+$wb['redis_updated_txt'] = 'Redis instance updated successfully';
+$wb['redis_deleted_txt'] = 'Redis instance deleted successfully';
+?>

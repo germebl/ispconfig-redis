@@ -1,0 +1,41 @@
+<?php
+// /usr/local/ispconfig/interface/plugins/redis/lib/lang/de.lng
+
+$wb['list_head_txt'] = 'Redis Instanzen';
+$wb['redis_name_txt'] = 'Instanz Name';
+$wb['redis_port_txt'] = 'Port';
+$wb['redis_status_txt'] = 'Status';
+$wb['redis_memory_txt'] = 'Speicher';
+$wb['redis_optimization_txt'] = 'Optimierung';
+$wb['active_txt'] = 'Aktiv';
+$wb['inactive_txt'] = 'Inaktiv';
+
+$wb['redis_settings_txt'] = 'Redis Einstellungen';
+$wb['optimization_mode_txt'] = 'Optimierungsmodus';
+$wb['maxmemory_txt'] = 'Max. Speicher';
+$wb['maxmemory_hint_txt'] = 'z.B. 128mb, 1gb, 512kb';
+$wb['eviction_policy_txt'] = 'Eviction Policy';
+$wb['password_txt'] = 'Passwort';
+$wb['custom_config_txt'] = 'Benutzerdefinierte Konfiguration';
+
+$wb['cache_txt'] = 'Cache Optimiert';
+$wb['fullpage_txt'] = 'Full Page Cache';
+$wb['session_txt'] = 'Session Storage';
+$wb['custom_txt'] = 'Benutzerdefiniert';
+
+$wb['btn_save_txt'] = 'Speichern';
+$wb['btn_cancel_txt'] = 'Abbrechen';
+$wb['btn_add_txt'] = 'Hinzufügen';
+$wb['btn_edit_txt'] = 'Bearbeiten';
+$wb['btn_delete_txt'] = 'Löschen';
+
+$wb['error_redis_name_empty'] = 'Redis Instanz Name ist erforderlich';
+$wb['error_redis_name_exists'] = 'Eine Redis Instanz mit diesem Namen existiert bereits';
+$wb['error_invalid_memory_format'] = 'Ungültiges Speicher-Format';
+$wb['error_port_in_use'] = 'Port ist bereits in Verwendung';
+
+$wb['confirm_delete_txt'] = 'Möchten Sie diese Redis Instanz wirklich löschen?';
+$wb['redis_created_txt'] = 'Redis Instanz wurde erfolgreich erstellt';
+$wb['redis_updated_txt'] = 'Redis Instanz wurde erfolgreich aktualisiert';
+$wb['redis_deleted_txt'] = 'Redis Instanz wurde erfolgreich gelöscht';
+?>
